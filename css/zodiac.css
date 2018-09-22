@@ -1,0 +1,479 @@
+body{
+  background-color: #555;
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    color: #efdbc0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #000;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFF;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-top: 0px;
+}
+
+#container{
+  background-color: maroon;
+  width: 95%;
+  margin: 0 auto;
+  border: 7px solid beige;
+  border-radius: 40px;
+  height: auto;
+  padding: 20px;
+}
+
+#bigPicDiv, #thumbsDiv{
+  background-color: white;
+  border: 5px solid tan;
+  border-radius: 20px;
+  padding: 10px;
+  height: 480px;
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#bigPicDiv{
+  	float: right;
+  	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#bigPicDiv img {
+	width: 100%;
+	height: 90%;
+}
+
+#thumbsDiv{
+  width: 58%;
+  float: left;
+  margin-right: 10px;
+  background-image: url(../img/chinese-zodiac/janice-w-bunny-600x261.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+header{
+  height: 100px;
+  text-align: center;
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+footer{
+  height: 30px;
+  clear: both;
+  text-align: right;
+  padding-top: 10px;
+}
+
+button{
+  font-size: 1rem;
+  padding: 3px;
+  color:whitesmoke;
+  background-color: darkorchid;
+  border-radius: 10px;
+  width: 100px;
+}
+
+#chinChar{
+  position: relative;
+  width: 247px;
+  height: 158px;
+  left: 50%;
+  margin-left: -272px;	
+  top: 50%;
+  margin-top: -173px;
+  background-color: white;
+  text-align: center;
+  display: none;
+  z-index: 1;
+}
+
+#restart{
+  display: none;
+}
+
+#thumbsDiv img {
+    width: 80px;
+	height: 80px;
+    border: 3px solid #AAA;
+    box-shadow: 5px 5px 5px #888;
+    border-radius: 10px;
+    margin: 13px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1260px) {
+	#animalPen {	
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center !important;
+	}
+	
+	#chinChar {
+		margin-top: -160px;
+	}	
+}
+
+@media screen and (max-width: 1235px) {
+	#thumbsDiv img {
+		width: 70px;
+		height: 70px;
+	}
+	
+	#bigPicDiv img {
+		height: 80%;
+	}
+	
+	#chinChar {
+		margin-top: -140px;
+	}
+}
+
+@media screen and (max-width: 1126px) {
+	#thumbsDiv, #bigPicDiv {
+		height: 21em;
+	}
+	#thumbsDiv img {
+		width: 100px;
+    	height: 100px;
+	}
+	
+	#bigPicDiv img {
+		width: 100%;
+    	height: 53%;
+    	margin: 0 auto;
+	}
+	
+	#chinChar {
+		margin-top: -236px;
+	}
+}
+
+@media screen and (max-width: 1068px) {
+	#container {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#thumbsDiv {
+		width: 97%;
+		height: 16em;
+	}
+	
+	#chinChar{
+	  margin-top: -184px;
+	}
+	
+	#bigPicDiv {
+		width: 97%;
+		height: 16em;
+		margin-top: 1em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	#bigPicDiv img {
+		width: 50%;
+    	height: 90%;
+    	margin: 0 auto;
+	}
+
+}
+
+@media screen and (max-width: 886px) {
+	#thumbsDiv img {
+		width: 80px;
+		height: 80px;
+	}
+	
+	#bigPicDiv {
+		height: 17.5em;
+	}
+	
+	#bigPicDiv img {
+		width: 70%;
+    	height: 90%;
+    	margin: 0 auto;
+	}
+	
+	#chinChar {
+		margin-top: -144px;
+	}
+	
+	#container {
+		width: 93%;
+	}
+	
+	h1 {
+		font-size: 1.8rem;
+	}
+	
+	h2 {
+		font-size: 1.3rem;
+	}
+	
+	#wheel {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	#thumbsDiv {
+		height: 21em;
+	}
+	
+	#bigPicDiv {
+		height: 21em;
+	}
+	
+	#thumbsDiv img {
+		width: 110px;
+		height: 110px;
+	}
+	
+	#chinChar {
+		margin-top: -266px;
+	}
+	
+	#bigPicDiv img {
+		width: 90%;
+    	height: 80%;
+    	margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 666px) {
+	#container {
+		width: 90%;
+	}
+	
+	#thumbsDiv {
+		height: 19em;
+		background-size: 500px auto;
+	}
+	
+	#bigPicDiv {
+		height: 19em;
+	}
+	
+	#thumbsDiv img {
+		width: 100px;
+		height: 100px;
+	}
+	
+	#chinChar {
+		width: 207px;
+		height: 128px;
+		margin-left: -227px;
+		margin-top: -236px;
+	}
+	
+	#wheel {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	#thumbsDiv img {
+		width: 90px;
+		height: 90px;
+	}
+	
+	#bigPicDiv img {
+		width: 90%;
+    	height: 80%;
+    	margin: 0 auto;
+	}
+	
+	#chinChar {
+		margin-left: -226px;
+    	margin-top: -207px;
+	}
+}
+
+@media screen and (max-width: 585px) {
+	h1 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+	
+	h2 {
+		font-size: 1.2rem;
+	}
+	
+	#thumbsDiv img {
+		width: 80px;
+    	height: 80px;
+	}
+	
+	#thumbsDiv {
+		height: 16em;
+		background-size: 400px auto;
+	}
+	#thumbsDiv, #bigPicDiv {
+		width: 93%;
+	}
+	
+	#bigPicDiv img {
+		width: 95%;
+	}
+	
+	#chinChar {
+		width: 162px;
+		height: 105px;
+		margin-left: -179px;
+		margin-top: -194px;
+	}
+	
+	#wheel {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 551px) {
+	#thumbsDiv, #bigPicDiv {
+		width: 93%;
+		height: 15em;
+	}
+	
+	#thumbsDiv img {
+		width: 70px;
+		height: 70px;
+	}
+	
+	#bigPicDiv img {
+		height: 85%;
+	}
+	
+	#chinChar {
+		margin-top: -179px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	#container {
+		width: 88%;
+	}
+	
+	h1 {
+		font-size: 1.3rem;
+	}
+	
+	h2 {
+		font-size: 1rem;
+	}
+	
+	#thumbsDiv {
+		background-size: 400px auto;
+	}
+	
+	#thumbsDiv img {
+		width: 70px;
+    	height: 70px;
+	}
+	
+	#thumbsDiv, #bigPicDiv {
+		width: 93%;
+		height: 15em;
+	}
+	
+	#chinChar {
+		margin-top: -180px;
+	}
+}
+
+@media screen and (max-width: 514px) {
+	#thumbsDiv, #bigPicDiv {
+		height: 14em;
+	}
+	#thumbsDiv img {
+		width: 60px;
+    	height: 60px;
+	}
+	
+	#chinChar {
+		margin-top: -165px;
+	}
+}
+
+@media screen and (max-width: 465px) {
+	h1 {
+		font-size: 1.1rem;
+	}
+	
+	h2 {
+		font-size: 0.9rem;
+		margin-bottom: 1.5em;
+	}
+	
+	#thumbsDiv {
+		background-size: 300px auto;
+		height: 11em;
+	}
+	
+	#bigPicDiv {
+		height: 11em;
+	}
+	
+	#bigPicDiv img {
+		height: 95%;
+	}
+	
+	#thumbsDiv img {
+		width: 50px;
+    	height: 50px;
+	}
+	
+	#chinChar {
+		width: 123px;
+		height: 75px;
+		margin-left: -136px;
+		margin-top: -150px;
+	}
+}
+
+@media screen and (max-width: 416px) {
+	#thumbsDiv img {
+		width: 45px;
+    	height: 45px;
+	}
+	
+	#bigPicDiv {
+		height: 11em;
+	}
+	
+	#chinChar {
+		margin-left: -136px;
+    	margin-top: -136px;
+	}
+	
+	#bigPicDiv img {
+		width: 100%;
+		height: 90%;
+	}
+}
+
+
+
+
+
+
+
